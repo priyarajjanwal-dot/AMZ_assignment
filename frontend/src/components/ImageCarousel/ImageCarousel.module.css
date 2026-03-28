@@ -1,0 +1,51 @@
+.carouselContainer {
+  display: flex;
+  gap: 20px;
+  position: sticky;
+  top: 20px;
+}
+
+.thumbnails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50px;
+}
+
+.thumbnailBox {
+  border: 1px solid #e7e7e7;
+  border-radius: 4px;
+  padding: 2px;
+  cursor: pointer;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumbnailBox.active {
+  border-color: #007185;
+  box-shadow: 0 0 3px rgba(0,113,133,0.5);
+}
+
+.thumbnail {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.mainImageBox {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  height: 500px;
+}
+
+.mainImage {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}

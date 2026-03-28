@@ -1,0 +1,32 @@
+.page { display: flex; flex-direction: column; min-height: 100vh; background: #fff; }
+.container { max-width: 1000px; margin: 0 auto; padding: 30px 20px; width: 100%; flex: 1; color: #0f1111; }
+.title { font-size: 28px; font-weight: normal; margin-bottom: 25px; }
+
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+
+.card { border: 1px solid #d5d9d9; border-radius: 8px; padding: 20px; display: flex; gap: 15px; cursor: pointer; }
+.card:hover { background: #f7fafa; }
+.icon { font-size: 32px; }
+.cardContent h3 { font-size: 16px; margin-bottom: 5px; font-weight: normal; }
+.cardContent p { font-size: 14px; color: #565959; margin-bottom: 10px; }
+
+.infoLine { font-size: 13px; margin-bottom: 3px; }
+.addressBlock { background: #f0f2f2; padding: 10px; border-radius: 4px; font-size: 13px; line-height: 1.5; margin-bottom: 10px; cursor: default; }
+.emptyText { font-size: 13px; color: #565959; font-style: italic; }
+
+.modalOverlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; z-index: 1000; }
+.modalContent { background: white; width: 450px; border-radius: 8px; overflow: hidden; max-height: 90vh; overflow-y: auto; }
+.modalHeader { background: #f0f2f2; padding: 15px 20px; font-weight: bold; border-bottom: 1px solid #ddd; }
+.modalHeader h3 { font-size: 16px; margin: 0; color: #111; }
+.modalBody { padding: 20px; color: #111; font-size: 13px; display: flex; flex-direction: column; gap: 15px; }
+
+.inputGroup { display: flex; flex-direction: column; gap: 5px; }
+.inputGroup label { font-weight: bold; font-size: 12px; }
+.inputGroup input { padding: 8px 10px; border: 1px solid #888c8c; border-radius: 4px; box-shadow: 0 1px 2px rgba(15,17,17,.15) inset; outline: none; }
+.inputGroup input:focus { border-color: #007185; box-shadow: 0 0 0 3px #c8f3fa, 0 1px 2px rgba(15,17,17,.15) inset; }
+
+.submitBtn { background: #ffd814; border: 1px solid #fcd200; border-radius: 8px; font-weight: bold; padding: 10px; cursor: pointer; display: block; width: 100%; box-shadow: 0 2px 5px rgba(15,17,17,.15); }
+.submitBtn:hover { background: #f7ca00; }
+
+@media (max-width: 900px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }

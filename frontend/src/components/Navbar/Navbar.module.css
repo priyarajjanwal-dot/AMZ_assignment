@@ -1,0 +1,180 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #131921;
+  color: white;
+  padding: 10px 20px;
+  font-family: inherit;
+}
+
+.navLeft {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logoBox { margin-right: 15px; display: flex; align-items: center; justify-content: center; height: 50px; padding: 0 10px; border: 1px solid transparent; }
+.logoBox:hover { border: 1px solid white; border-radius: 2px; }
+.logo {
+  width: 95px;
+  object-fit: contain;
+  margin-top: 5px;
+}
+
+.locationBox {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.locationBox:hover { border: 1px solid white; border-radius: 2px; }
+.locLine1 { font-size: 12px; color: #ccc; margin-left: 17px; }
+.locLine2 { font-size: 14px; font-weight: bold; position: relative; }
+.locLine2::before { content: '📍'; position: absolute; left: -18px; top: 0; font-size: 13px; }
+
+.searchBox {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 4px;
+  margin: 0 20px;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+}
+.searchBox:focus-within {
+  box-shadow: 0 0 0 2px #f90, 0 0 0 3px rgba(255, 153, 0, 0.5);
+}
+
+.searchDropdown {
+  background-color: #f3f3f3;
+  color: #111;
+  border: none;
+  border-right: 1px solid #ccc;
+  padding: 0 10px;
+  height: 100%;
+  font-size: 12px;
+  outline: none;
+  cursor: pointer;
+}
+
+.searchInput {
+  flex: 1;
+  border: none;
+  padding: 0 10px;
+  height: 100%;
+  font-size: 15px;
+  outline: none;
+}
+
+.searchBtn {
+  background-color: #febd69;
+  border: none;
+  padding: 0 15px;
+  height: 100%;
+  cursor: pointer;
+}
+.searchBtn:hover {
+  background-color: #f3a847;
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navItem {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+.navItem:hover { border: 1px solid white; border-radius: 2px; }
+.navLine1 { font-size: 12px; line-height: 14px; }
+.navLine2 { font-size: 14px; font-weight: bold; line-height: 15px; }
+
+.cartBox {
+  display: flex;
+  align-items: flex-end;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+.cartBox:hover { border: 1px solid white; border-radius: 2px; }
+.cartCount {
+  color: #f08804;
+  font-weight: bold;
+  font-size: 16px;
+  position: relative;
+  top: -8px;
+  right: -10px;
+}
+.cartText {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .searchBox { display: none; }
+  .locationBox { display: none; }
+}
+
+/* User Dropdown items */
+.userDropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 280px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  color: #111;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdownSignIn { text-align: center; border-bottom: 1px solid #eee; padding-bottom: 15px; }
+.btnPrimary { display: block; background: #ffd814; color: #111; text-decoration: none; padding: 10px; border-radius: 8px; font-weight: bold; margin-bottom: 10px; }
+.btnPrimary:hover { background: #f7ca00; }
+.dropdownSignIn p { font-size: 11px; margin: 0; }
+.dropdownSignIn a { color: #007185; text-decoration: none; }
+.dropdownSignIn a:hover { text-decoration: underline; color: #c45500; }
+
+.dropdownLinks h3 { font-size: 16px; font-weight: bold; margin-bottom: 10px; }
+.dropdownLinks a { display: block; color: #111; text-decoration: none; font-size: 14px; margin-bottom: 8px; }
+.dropdownLinks a:hover { color: #c45500; text-decoration: underline; }
+.logoutBtn { background: none; border: none; color: #111; font-size: 14px; cursor: pointer; text-align: left; padding: 0; font-family: inherit; margin-top: 5px; }
+.logoutBtn:hover { color: #c45500; text-decoration: underline; }
+
+/* Location Modal items */
+.modalOverlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; z-index: 1000; }
+.modalContent { background: white; width: 400px; border-radius: 8px; overflow: hidden; }
+.modalHeader { background: #f0f2f2; padding: 15px 20px; font-weight: bold; border-bottom: 1px solid #ddd; }
+.modalHeader h3 { font-size: 16px; margin: 0; color: #111; }
+.modalBody { padding: 20px; color: #111; font-size: 13px; }
+.modalBody p { color: #565959; margin-bottom: 15px; }
+
+.addressList { margin-bottom: 20px; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; }
+.addressItem { padding: 12px 15px; border-bottom: 1px solid #eee; cursor: pointer; }
+.addressItem:last-child { border-bottom: none; }
+.addressItem:hover { background: #f8f8f8; }
+
+.pincodeEntry { margin-top: 15px; }
+.pinInputRow { display: flex; gap: 10px; }
+.pinInputRow input { flex: 1; padding: 8px 10px; border: 1px solid #888c8c; border-radius: 4px; box-shadow: 0 1px 2px rgba(15,17,17,.15) inset; outline: none; }
+.pinInputRow input:focus { border-color: #007185; box-shadow: 0 0 0 3px #c8f3fa, 0 1px 2px rgba(15,17,17,.15) inset; }
+.pinInputRow button { padding: 8px 20px; background: white; border: 1px solid #d5d9d9; border-radius: 8px; cursor: pointer; box-shadow: 0 2px 5px rgba(15,17,17,.15); font-size: 13px; font-family: inherit; }
+.pinInputRow button:hover { background: #f7fafa; }

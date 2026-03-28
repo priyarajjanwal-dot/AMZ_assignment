@@ -1,0 +1,25 @@
+.page { display: flex; flex-direction: column; min-height: 100vh; background: #fff; }
+.container { max-width: 900px; margin: 0 auto; padding: 20px; width: 100%; flex: 1; }
+.title { font-size: 28px; font-weight: normal; margin-bottom: 20px; }
+
+.orderCard { border: 1px solid #d5d9d9; border-radius: 8px; margin-bottom: 20px; overflow: hidden; }
+.orderHeader { background: #f0f2f2; padding: 14px 18px; display: flex; justify-content: space-between; border-bottom: 1px solid #d5d9d9; font-size: 14px; color: #565959; }
+.headerInfo { display: flex; gap: 40px; }
+.infoCol { display: flex; flex-direction: column; }
+.label { font-size: 12px; margin-bottom: 2px; }
+.val { color: #0f1111; }
+.headerRight { display: flex; flex-direction: column; align-items: flex-end; }
+.link { color: #007185; text-decoration: none; font-size: 14px; margin-top: 2px; }
+.link:hover { text-decoration: underline; color: #c45500; }
+
+.orderBody { padding: 20px; }
+.status { font-size: 18px; margin-bottom: 15px; color: #0f1111; }
+.itemRow { display: flex; margin-bottom: 15px; gap: 15px; }
+.itemImg { width: 90px; height: 90px; object-fit: contain; }
+.itemDetails { flex: 1; display: flex; flex-direction: column; }
+.itemName { color: #007185; text-decoration: none; font-size: 14px; margin-bottom: 5px; line-height: 1.4; }
+.itemName:hover { text-decoration: underline; color: #c45500; }
+.itemQty { font-size: 12px; color: #565959; }
+.itemActions { width: 250px; display: flex; flex-direction: column; gap: 10px; }
+.actionBtn { background: white; border: 1px solid #d5d9d9; border-radius: 8px; padding: 6px 0; cursor: pointer; font-size: 14px; box-shadow: 0 2px 5px rgba(15,17,17,.15); }
+.actionBtn:hover { background: #f7fafa; }

@@ -1,0 +1,27 @@
+.page { background: #f3f3f3; min-height: 100vh; }
+.header { display: flex; align-items: center; justify-content: space-between; padding: 20px 40px; background: white; border-bottom: 1px solid #ddd; }
+.logo { width: 100px; }
+.header h2 { font-weight: 400; font-size: 28px; }
+
+.container { display: flex; max-width: 1200px; margin: 0 auto; padding: 20px; gap: 20px; align-items: flex-start; }
+.mainCol { flex: 1; display: flex; flex-direction: column; gap: 20px; }
+.sideCol { width: 350px; }
+
+.stepBox { background: white; padding: 20px; border-radius: 4px; border: 1px solid #ddd; }
+.stepBox h3 { font-size: 18px; margin-bottom: 15px; color: #c45500; }
+.stepContent { padding-left: 20px; font-size: 14px; line-height: 1.5; }
+
+.reviewItem { display: flex; gap: 15px; margin-bottom: 15px; }
+.itemImg { width: 80px; height: 80px; object-fit: contain; }
+.itemInfo { display: flex; flex-direction: column; }
+.itemInfo h4 { font-size: 14px; margin-bottom: 5px; color: #007185; }
+.itemPrice { font-size: 14px; font-weight: bold; color: #b12704; }
+.itemQty { font-size: 12px; color: #555; }
+
+.summaryBox { background: white; padding: 20px; border-radius: 4px; border: 1px solid #ddd; }
+.placeBtn { width: 100%; background: #ffd814; border: none; border-radius: 8px; padding: 10px; font-size: 14px; cursor: pointer; margin-bottom: 10px; }
+.placeBtn:hover { background: #f7ca00; }
+.disclaimer { font-size: 12px; color: #565959; text-align: center; margin-bottom: 15px; }
+
+.summaryRow { display: flex; justify-content: space-between; font-size: 14px; margin-bottom: 5px; }
+.orderTotal { display: flex; justify-content: space-between; font-size: 18px; font-weight: bold; color: #b12704; margin-top: 10px; }
